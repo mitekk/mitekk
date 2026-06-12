@@ -5,11 +5,13 @@
 
 </div>
 
-<!-- mitekk/mitekk — profile README. NEON DARK DASHBOARD variant (revised 2026-06-12).
+<!-- mitekk/mitekk — profile README. NEON DARK DASHBOARD variant (revised 2026-06-13).
      Dark-first BY DESIGN: the stat panels render as dark cards even in light mode (intentional, like a dashboard).
      No <script>, no CSS, no style= attributes (GitHub strips them). Animation only from allowlisted external services.
      Accent = neon ember #FF5A36. To retheme, find/replace FF5A36 (and the light-mode pair E23C1E) everywhere.
      Dropped by decision (2026-06-12): followers badge, view counter, trophy row (0-interest on a 0-follower account).
+     Dropped by decision (2026-06-13): currently-building, stats card (public instance can't count private
+     commits), snake + its workflow, connect (hero badges carry the links), torii.txt easter egg, achievements footer.
      pool-stars source is private: live link only, no repo link. spark is private: omitted.
      Sections are commented; delete any block you don't want. -->
 
@@ -17,17 +19,18 @@
 
 <!-- Typing tagline. Animated SVG from an allowlisted service (survives camo). Dual <source> = crisp in light AND dark. -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1200&color=FF5A36&center=true&vCenter=true&width=800&height=50&lines=Senior+Full-Stack+Developer+%26+Team+Lead+%C2%B7+14+years;If+at+first%2C+you+don%27t+succeed%2C+skydiving+is+not+for+you.;real-time+backends+%C2%B7+server-authoritative+logic+%C2%B7+agentic+tooling" />
-  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1200&color=E23C1E&center=true&vCenter=true&width=800&height=50&lines=Senior+Full-Stack+Developer+%26+Team+Lead+%C2%B7+14+years;If+at+first%2C+you+don%27t+succeed%2C+skydiving+is+not+for+you.;real-time+backends+%C2%B7+server-authoritative+logic+%C2%B7+agentic+tooling" />
-  <img alt="Senior Full-Stack Developer & Team Lead · 14 years" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1200&color=FF5A36&center=true&vCenter=true&width=800&height=50&lines=Senior+Full-Stack+Developer+%26+Team+Lead+%C2%B7+14+years;If+at+first%2C+you+don%27t+succeed%2C+skydiving+is+not+for+you.;real-time+backends+%C2%B7+server-authoritative+logic+%C2%B7+agentic+tooling" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1200&color=FF5A36&center=true&vCenter=true&width=800&height=50&lines=Senior+Full-Stack+Developer+%26+Team+Lead+%C2%B7+14+years;the+server+is+the+source+of+truth.+the+client+is+a+charming+liar." />
+  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1200&color=E23C1E&center=true&vCenter=true&width=800&height=50&lines=Senior+Full-Stack+Developer+%26+Team+Lead+%C2%B7+14+years;the+server+is+the+source+of+truth.+the+client+is+a+charming+liar." />
+  <img alt="Senior Full-Stack Developer & Team Lead · 14 years" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1200&color=FF5A36&center=true&vCenter=true&width=800&height=50&lines=Senior+Full-Stack+Developer+%26+Team+Lead+%C2%B7+14+years;the+server+is+the+source+of+truth.+the+client+is+a+charming+liar." />
 </picture>
 
 <br/><br/>
 
 <!-- quick badges. Uniform ember-on-dark recipe so they read as one set, not a pile.
-     (LinkedIn has no simple-icons logo anymore — text-only badge is deliberate.) -->
-<a href="https://mitya.dev"><img alt="website" src="https://img.shields.io/badge/mitya.dev-FF5A36?style=for-the-badge&labelColor=0D1117" /></a>
-<a href="https://www.linkedin.com/in/mitya-kurs/"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-0D1117?style=for-the-badge&labelColor=0D1117&color=FF5A36" /></a>
+     (simple-icons dropped LinkedIn, and has no generic globe — the website + LinkedIn logos
+     are embedded as base64 data-URIs; the white fill is baked into the SVG, logoColor is ignored.) -->
+<a href="https://mitya.dev"><img alt="website" src="https://img.shields.io/badge/mitya.dev-FF5A36?style=for-the-badge&labelColor=0D1117&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0xNi4zNiwxNEMxNi40NCwxMy4zNCAxNi41LDEyLjY4IDE2LjUsMTJDMTYuNSwxMS4zMiAxNi40NCwxMC42NiAxNi4zNiwxMEgxOS43NEMxOS45LDEwLjY0IDIwLDExLjMxIDIwLDEyQzIwLDEyLjY5IDE5LjksMTMuMzYgMTkuNzQsMTRNMTQuNTksMTkuNTZDMTUuMTksMTguNDUgMTUuNjUsMTcuMjUgMTUuOTcsMTZIMTguOTJDMTcuOTYsMTcuNjUgMTYuNDMsMTguOTMgMTQuNTksMTkuNTZNMTQuMzQsMTRIOS42NkM5LjU2LDEzLjM0IDkuNSwxMi42OCA5LjUsMTJDOS41LDExLjMyIDkuNTYsMTAuNjUgOS42NiwxMEgxNC4zNEMxNC40MywxMC42NSAxNC41LDExLjMyIDE0LjUsMTJDMTQuNSwxMi42OCAxNC40MywxMy4zNCAxNC4zNCwxNE0xMiwxOS45NkMxMS4xNywxOC43NiAxMC41LDE3LjQzIDEwLjA5LDE2SDEzLjkxQzEzLjUsMTcuNDMgMTIuODMsMTguNzYgMTIsMTkuOTZNOCw4SDUuMDhDNi4wMyw2LjM0IDcuNTcsNS4wNiA5LjQsNC40NEM4LjgsNS41NSA4LjM1LDYuNzUgOCw4TTUuMDgsMTZIOEM4LjM1LDE3LjI1IDguOCwxOC40NSA5LjQsMTkuNTZDNy41NywxOC45MyA2LjA0LDE3LjY1IDUuMDgsMTZNNC4yNiwxNEM0LjEsMTMuMzYgNCwxMi42OSA0LDEyQzQsMTEuMzEgNC4xLDEwLjY0IDQuMjYsMTBINy42NEM3LjU2LDEwLjY2IDcuNSwxMS4zMiA3LjUsMTJDNy41LDEyLjY4IDcuNTYsMTMuMzQgNy42NCwxNE0xMiw0LjAzQzEyLjgzLDUuMjMgMTMuNSw2LjU3IDEzLjkxLDhIMTAuMDlDMTAuNSw2LjU3IDExLjE3LDUuMjMgMTIsNC4wM00xOC45Miw4SDE1Ljk3QzE1LjY1LDYuNzUgMTUuMTksNS41NSAxNC41OSw0LjQ0QzE2LjQzLDUuMDcgMTcuOTYsNi4zNCAxOC45Miw4TTEyLDJDNi40NywyIDIsNi41IDIsMTJBMTAsMTAgMCAwLDAgMTIsMjJBMTAsMTAgMCAwLDAgMjIsMTJBMTAsMTAgMCAwLDAgMTIsMloiLz48L3N2Zz4=" /></a>
+<a href="https://www.linkedin.com/in/mitya-kurs/"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-0D1117?style=for-the-badge&labelColor=0D1117&color=FF5A36&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0yMC40NDcgMjAuNDUyaC0zLjU1NHYtNS41NjljMC0xLjMyOC0uMDI3LTMuMDM3LTEuODUyLTMuMDM3LTEuODUzIDAtMi4xMzYgMS40NDUtMi4xMzYgMi45Mzl2NS42NjdIOS4zNTFWOWgzLjQxNHYxLjU2MWguMDQ2Yy40NzctLjkgMS42MzctMS44NSAzLjM3LTEuODUgMy42MDEgMCA0LjI2NyAyLjM3IDQuMjY3IDUuNDU1djYuMjg2ek01LjMzNyA3LjQzM2MtMS4xNDQgMC0yLjA2My0uOTI2LTIuMDYzLTIuMDY1IDAtMS4xMzguOTItMi4wNjMgMi4wNjMtMi4wNjMgMS4xNCAwIDIuMDY0LjkyNSAyLjA2NCAyLjA2MyAwIDEuMTM5LS45MjUgMi4wNjUtMi4wNjQgMi4wNjV6bTEuNzgyIDEzLjAxOUgzLjU1NVY5aDMuNTY0djExLjQ1MnpNMjIuMjI1IDBIMS43NzFDLjc5MiAwIDAgLjc3NCAwIDEuNzI5djIwLjU0MkMwIDIzLjIyNy43OTIgMjQgMS43NzEgMjRoMjAuNDUxQzIzLjIgMjQgMjQgMjMuMjI3IDI0IDIyLjI3MVYxLjcyOUMyNCAuNzc0IDIzLjIgMCAyMi4yMjUgMHoiLz48L3N2Zz4=" /></a>
 <a href="https://profile.mitya.dev/Mitya_Kurs.pdf"><img alt="CV (PDF)" src="https://img.shields.io/badge/cv_(pdf)-0D1117?style=for-the-badge&labelColor=0D1117&color=FF5A36&logo=googledocs&logoColor=white" /></a>
 <a href="mailto:mitekk@gmail.com"><img alt="email" src="https://img.shields.io/badge/email-0D1117?style=for-the-badge&labelColor=0D1117&color=FF5A36&logo=gmail&logoColor=white" /></a>
 
@@ -36,17 +39,6 @@
 <!-- ============================== INTRO ============================== -->
 
 Senior full-stack developer &amp; team lead — 14 years shipping products and leading teams. I build things that ship: real-time backends, server-authoritative game logic, and agentic tooling. Mostly TypeScript, some Python, increasingly with an AI pair in the loop. Based in the Sharon, Israel; works in Hebrew &amp; English. Portfolio &amp; CV at **[profile.mitya.dev](https://profile.mitya.dev)**, project hub at **[mitya.dev](https://mitya.dev)** — and everything with a live link below runs on [infrastructure I operate myself](#how-it-ships).
-
-<!-- ========================= CURRENTLY BUILDING ========================= -->
-<details open>
-<summary><b>⚡ currently building</b></summary>
-<br/>
-
-- **[pulse](https://github.com/mitekk/pulse)** — real-time, Twitter-style microblogging. The interesting part is the live fan-out: threaded posts, follows, DMs, and a timeline/notifications/trends pipeline over NestJS · PostgreSQL · Redis · React · MinIO. Live at [pulse.mitya.dev](https://pulse.mitya.dev).
-- **[codeViber](https://github.com/mitekk/codeViber)** — a Claude Code scaffold that drives delivery from raw requirement to validated code, through specialist subagents and a persistent state machine. For people who live in Claude Code.
-- **[lunaland](https://github.com/mitekk/lunaland)** — a production-shaped social/sweepstakes casino PoC: provably-fair slots, a dual-currency economy, and server-authoritative everything (the client is never trusted). Live at [lunaland.mitya.dev](https://lunaland.mitya.dev).
-
-</details>
 
 <!-- ============================ SELECTED WORK ============================ -->
 ### selected work
@@ -165,10 +157,11 @@ flowchart LR
 
 <!-- ============================ STATS DASHBOARD ============================ -->
 <!-- Fixed dark panels (theme baked to #0D1117 + ember). They render as dark cards in BOTH modes — intentional.
-     stars + rank hidden on purpose (new public account). Public Vercel/demolab instances may rate-limit; self-host if you care. -->
+     Stats card dropped 2026-06-13: the public github-readme-stats instance can't count private commits
+     (count_private support removed upstream), so it under-reported badly — the streak + activity graph
+     read the contribution calendar and DO include private contributions. Public instances may rate-limit. -->
 <div align="center">
 
-<img width="49%" alt="mitekk's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=mitekk&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&hide=issues,stars&hide_rank=true&title_color=FF5A36&icon_color=FF5A36&text_color=A8B3CF&bg_color=0D1117" />
 <img width="49%" alt="mitekk's top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mitekk&layout=compact&hide_border=true&langs_count=8&title_color=FF5A36&text_color=A8B3CF&bg_color=0D1117" />
 
 <br/>
@@ -179,44 +172,4 @@ flowchart LR
 
 <img width="98%" alt="mitekk's contribution activity" src="https://github-readme-activity-graph.vercel.app/graph?username=mitekk&bg_color=0D1117&color=FF5A36&line=FF5A36&point=FFFFFF&area=true&area_color=FF5A36&hide_border=true&custom_title=contribution%20activity" />
 
-<br/><br/>
-
-<!-- Contribution snake. Generated by the GitHub Action (see .github/workflows/snake.yml) and committed to the `output` branch.
-     These URLs 404 until the action has run once. -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mitekk/mitekk/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mitekk/mitekk/output/github-snake.svg" />
-  <img alt="contribution snake" src="https://raw.githubusercontent.com/mitekk/mitekk/output/github-snake.svg" />
-</picture>
-
-</div>
-
-<!-- ============================== CONNECT ============================== -->
-### connect
-
-<a href="https://mitya.dev"><code>mitya.dev</code></a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/mitya-kurs/"><code>linkedin/mitya-kurs</code></a> &nbsp;·&nbsp; <a href="https://profile.mitya.dev/Mitya_Kurs.pdf"><code>CV (PDF)</code></a> &nbsp;·&nbsp; <a href="mailto:mitekk@gmail.com"><code>mitekk@gmail.com</code></a>
-
-<!-- ========================= EASTER EGG (optional) ========================= -->
-<details>
-<summary><code>⛩  cat ./torii.txt</code></summary>
-
-```
-        ╔═══════════════════════════╗
-     ═══╩═══════════════════════════╩═══
-          ║                       ║
-     ═════╬═══════════════════════╬═════
-          ║                       ║
-          ║                       ║
-          ▀                       ▀
-```
-
-> a gate marks a threshold. the gate's always open — landing is your problem.
-
-</details>
-
-<!-- ============================ FOOTER (optional) ============================ -->
-<br/>
-
-<div align="center">
-<sub>achievements: pull shark ×3 &nbsp;·&nbsp; pair extraordinaire ×3 &nbsp;·&nbsp; quickdraw &nbsp;·&nbsp; yolo</sub>
 </div>
