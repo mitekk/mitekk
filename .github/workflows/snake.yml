@@ -9,6 +9,11 @@
 
 name: generate contribution snake
 
+# GitHub force-switches JS actions to Node 24 on 2026-06-16; opt in early so the
+# crazy-max push step is verified working under Node 24 (it ran Node 20 by default).
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
 on:
   schedule:
     # daily at 03:30 UTC
