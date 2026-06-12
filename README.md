@@ -1,3 +1,10 @@
+<!-- ============================== HERO ============================== -->
+<div align="center">
+
+# ⛩&nbsp; mitya kurs
+
+</div>
+
 <!-- mitekk/mitekk — profile README. NEON DARK DASHBOARD variant (revised 2026-06-12).
      Dark-first BY DESIGN: the stat panels render as dark cards even in light mode (intentional, like a dashboard).
      No <script>, no CSS, no style= attributes (GitHub strips them). Animation only from allowlisted external services.
@@ -6,10 +13,7 @@
      pool-stars source is private: live link only, no repo link. spark is private: omitted.
      Sections are commented; delete any block you don't want. -->
 
-<!-- ============================== HERO ============================== -->
 <div align="center">
-
-# ⛩&nbsp; mitya kurs
 
 <!-- Typing tagline. Animated SVG from an allowlisted service (survives camo). Dual <source> = crisp in light AND dark. -->
 <picture>
