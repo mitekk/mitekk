@@ -40,6 +40,19 @@
 
 Senior full-stack developer &amp; team lead — 14 years shipping products and leading teams. I build things that ship: real-time backends, server-authoritative game logic, and agentic tooling. Mostly TypeScript, some Python, increasingly with an AI pair in the loop. Based in the Sharon, Israel; works in Hebrew &amp; English. Portfolio &amp; CV at **[profile.mitya.dev](https://profile.mitya.dev)**, project hub at **[mitya.dev](https://mitya.dev)** — and everything with a live link below runs on [infrastructure I operate myself](#how-it-ships).
 
+<!-- ===================== CONTRIBUTION ACTIVITY ===================== -->
+<!-- Both read the contribution calendar, so they DO include private contributions. Dark cards in both modes (intentional).
+     Activity graph pinned to a 90-day range (days=90). Public demolab/vercel instances may rate-limit. -->
+<div align="center">
+
+<img width="60%" alt="mitekk's contribution streak" src="https://streak-stats.demolab.com?user=mitekk&hide_border=true&background=0D1117&border=30363D&stroke=30363D&ring=FF5A36&fire=FF5A36&currStreakNum=A8B3CF&currStreakLabel=FF5A36&sideNums=A8B3CF&sideLabels=A8B3CF&dates=8B949E" />
+
+<br/>
+
+<img width="98%" alt="mitekk's contribution activity (last 90 days)" src="https://github-readme-activity-graph.vercel.app/graph?username=mitekk&days=90&bg_color=0D1117&color=FF5A36&line=FF5A36&point=FFFFFF&area=true&area_color=FF5A36&hide_border=true&custom_title=contribution%20activity%20%C2%B7%20last%2090%20days" />
+
+</div>
+
 <!-- ============================ SELECTED WORK ============================ -->
 ### selected work
 
@@ -155,21 +168,12 @@ flowchart LR
     pg -. "nightly backup" .-> r2[("Cloudflare R2")]
 ```
 
-<!-- ============================ STATS DASHBOARD ============================ -->
-<!-- Fixed dark panels (theme baked to #0D1117 + ember). They render as dark cards in BOTH modes — intentional.
-     Stats card dropped 2026-06-13: the public github-readme-stats instance can't count private commits
-     (count_private support removed upstream), so it under-reported badly — the streak + activity graph
-     read the contribution calendar and DO include private contributions. Public instances may rate-limit. -->
+<!-- ============================ TOP LANGUAGES ============================ -->
+<!-- Fixed dark panel (theme baked to #0D1117 + ember) — renders as a dark card in BOTH modes, intentional.
+     Stats card dropped 2026-06-13 (public instance can't count private commits). Public instances may rate-limit.
+     The streak + activity widgets moved up near the top (just before "selected work") on 2026-06-13. -->
 <div align="center">
 
 <img width="49%" alt="mitekk's top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mitekk&layout=compact&hide_border=true&langs_count=8&title_color=FF5A36&text_color=A8B3CF&bg_color=0D1117" />
-
-<br/>
-
-<img width="60%" alt="mitekk's contribution streak" src="https://streak-stats.demolab.com?user=mitekk&hide_border=true&background=0D1117&border=30363D&stroke=30363D&ring=FF5A36&fire=FF5A36&currStreakNum=A8B3CF&currStreakLabel=FF5A36&sideNums=A8B3CF&sideLabels=A8B3CF&dates=8B949E" />
-
-<br/>
-
-<img width="98%" alt="mitekk's contribution activity" src="https://github-readme-activity-graph.vercel.app/graph?username=mitekk&bg_color=0D1117&color=FF5A36&line=FF5A36&point=FFFFFF&area=true&area_color=FF5A36&hide_border=true&custom_title=contribution%20activity" />
 
 </div>
