@@ -42,14 +42,14 @@ Senior full-stack developer &amp; team lead — 14 years shipping products and l
 
 <!-- ===================== CONTRIBUTION ACTIVITY ===================== -->
 <!-- Both read the contribution calendar, so they DO include private contributions. Dark cards in both modes (intentional).
-     Activity graph pinned to a 60-day range (days=60). Public demolab/vercel instances may rate-limit. -->
+     Activity graph pinned to a 45-day range (days=45). Public demolab/vercel instances may rate-limit. -->
 <div align="center">
 
 <img width="60%" alt="mitekk's contribution streak" src="https://streak-stats.demolab.com?user=mitekk&hide_border=true&background=0D1117&border=30363D&stroke=30363D&ring=FF5A36&fire=FF5A36&currStreakNum=A8B3CF&currStreakLabel=FF5A36&sideNums=A8B3CF&sideLabels=A8B3CF&dates=8B949E" />
 
 <br/>
 
-<img width="98%" alt="mitekk's contribution activity (last 60 days)" src="https://github-readme-activity-graph.vercel.app/graph?username=mitekk&days=60&bg_color=0D1117&color=FF5A36&line=FF5A36&point=FFFFFF&area=true&area_color=FF5A36&hide_border=true&custom_title=contribution%20activity%20%C2%B7%20last%2060%20days" />
+<img width="98%" alt="mitekk's contribution activity (last 45 days)" src="https://github-readme-activity-graph.vercel.app/graph?username=mitekk&days=45&bg_color=0D1117&color=FF5A36&line=FF5A36&point=FFFFFF&area=true&area_color=FF5A36&hide_border=true&custom_title=contribution%20activity%20%C2%B7%20last%2045%20days" />
 
 </div>
 
