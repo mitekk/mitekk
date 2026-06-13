@@ -12,7 +12,8 @@
      Dropped by decision (2026-06-12): followers badge, view counter, trophy row (0-interest on a 0-follower account).
      Dropped by decision (2026-06-13): currently-building, stats card (public instance can't count private
      commits), snake + its workflow, connect (hero badges carry the links), torii.txt easter egg, achievements footer,
-     selected-work table, how-it-ships (paragraph + mermaid). Top-languages moved between streak and activity.
+     selected-work table, how-it-ships (paragraph + mermaid), more-experiments. Top-languages moved between
+     streak and activity. Toolbox re-sourced from the portfolio (mitekk/portfolio src/pages/theBuzz/toolbox.tsx).
      pool-stars source is private: live link only, no repo link. spark is private: omitted.
      Sections are commented; delete any block you don't want. -->
 
@@ -39,7 +40,7 @@
 
 <!-- ============================== INTRO ============================== -->
 
-I ship products, build resilient teams, and lean on AI to move fast. Years of leading full-stack teams, decomposing monoliths, integrating with complex healthcare and insurance systems, mentoring engineers, and closing the gap between product and engineering - taught me what a well-built system looks like, and exactly what it costs when it isn't. Portfolio &amp; CV at **[profile.mitya.dev](https://profile.mitya.dev)**, project hub at **[mitya.dev](https://mitya.dev)**.
+I ship products, build resilient teams, and lean on AI to move fast. Years of leading full-stack teams — decomposing monoliths, integrating with complex healthcare and insurance systems, mentoring engineers, and closing the gap between product and engineering — taught me what a well-built system looks like, and exactly what it costs when it isn't. Portfolio &amp; CV at **[profile.mitya.dev](https://profile.mitya.dev)**, project hub at **[mitya.dev](https://mitya.dev)**.
 
 <!-- ===================== CONTRIBUTION ACTIVITY ===================== -->
 <!-- Both read the contribution calendar, so they DO include private contributions. Dark cards in both modes (intentional).
@@ -59,61 +60,80 @@ I ship products, build resilient teams, and lean on AI to move fast. Years of le
 
 </div>
 
-<!-- ========================= MORE EXPERIMENTS ========================= -->
-<details>
-<summary><b>🧪 more experiments</b></summary>
-<br/>
-
-- **[zeroBugPolicyGame](https://github.com/mitekk/zeroBugPolicyGame)** — a tiny browser game: clear a falling backlog of bug &amp; task tickets before it overflows. For developers who get the joke.
-- **[micro-fe](https://github.com/mitekk/micro-fe)** — micro-frontend PoC: a Vue host lazy-loads two independently-built remotes (one Vue, one React) at runtime via Module Federation.
-- **[react-native-auth](https://github.com/mitekk/react-native-auth)** — a complete mobile auth journey (register, login, password reset, email verification) in React Native + GraphQL.
-- **[hetzner-server-radar](https://github.com/mitekk/hetzner-server-radar)** — out-of-stock radar for Hetzner Cloud: an email the moment your server type is available again.
-- **[game-of-life](https://github.com/mitekk/game-of-life)** — Conway's Game of Life, ticking generation by generation in the browser.
-- **[Bomberman](https://github.com/mitekk/Bomberman)** — retro tile-based arena: place bombs, grab power-ups, outsmart bots.
-- **[tictactoe](https://github.com/mitekk/tictactoe)** — tiny full-stack tic-tac-toe against an AI opponent.
-
-</details>
-
 <!-- ============================== TOOLBOX ============================== -->
 ### toolbox
 
-<!-- Uniform ember-on-dark badges. Only tech the repos above actually use.
-     BullMQ deliberately not badged (no simple-icons logo) — Redis covers the queue story. -->
+<!-- Uniform ember-on-dark badges, sourced from the portfolio toolbox
+     (mitekk/portfolio · src/pages/theBuzz/toolbox.tsx, fetched 2026-06-13) — keep these in sync.
+     AWS, CDK, Playwright, Amplify, Codex are intentionally text-only: shields.io's bundled
+     simple-icons has no logo for them (the logo= param is omitted, not forgotten). -->
 <table>
-<tr>
-  <td><b>backend</b></td>
-  <td>
-    <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-0D1117?style=flat-square&logo=typescript&logoColor=FF5A36" />
-    <img alt="Node.js" src="https://img.shields.io/badge/Node.js-0D1117?style=flat-square&logo=nodedotjs&logoColor=FF5A36" />
-    <img alt="NestJS" src="https://img.shields.io/badge/NestJS-0D1117?style=flat-square&logo=nestjs&logoColor=FF5A36" />
-    <img alt="Fastify" src="https://img.shields.io/badge/Fastify-0D1117?style=flat-square&logo=fastify&logoColor=FF5A36" />
-    <img alt="Python" src="https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=FF5A36" />
-  </td>
-</tr>
-<tr>
-  <td><b>data</b></td>
-  <td>
-    <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-0D1117?style=flat-square&logo=postgresql&logoColor=FF5A36" />
-    <img alt="Redis" src="https://img.shields.io/badge/Redis-0D1117?style=flat-square&logo=redis&logoColor=FF5A36" />
-    <img alt="MinIO" src="https://img.shields.io/badge/MinIO-0D1117?style=flat-square&logo=minio&logoColor=FF5A36" />
-  </td>
-</tr>
 <tr>
   <td><b>frontend</b></td>
   <td>
     <img alt="React" src="https://img.shields.io/badge/React-0D1117?style=flat-square&logo=react&logoColor=FF5A36" />
+    <img alt="Vue.js" src="https://img.shields.io/badge/Vue.js-0D1117?style=flat-square&logo=vuedotjs&logoColor=FF5A36" />
     <img alt="Next.js" src="https://img.shields.io/badge/Next.js-0D1117?style=flat-square&logo=nextdotjs&logoColor=FF5A36" />
-    <img alt="static prerender" src="https://img.shields.io/badge/static_prerender-0D1117?style=flat-square&logo=html5&logoColor=FF5A36" />
+    <img alt="Tailwind" src="https://img.shields.io/badge/Tailwind-0D1117?style=flat-square&logo=tailwindcss&logoColor=FF5A36" />
+    <img alt="TanStack" src="https://img.shields.io/badge/TanStack-0D1117?style=flat-square&logo=tanstack&logoColor=FF5A36" />
+    <img alt="Storybook" src="https://img.shields.io/badge/Storybook-0D1117?style=flat-square&logo=storybook&logoColor=FF5A36" />
+    <img alt="Vite" src="https://img.shields.io/badge/Vite-0D1117?style=flat-square&logo=vite&logoColor=FF5A36" />
   </td>
 </tr>
 <tr>
-  <td><b>infra / ai</b></td>
+  <td><b>backend</b></td>
   <td>
-    <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-0D1117?style=flat-square&logo=anthropic&logoColor=FF5A36" />
-    <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub_Actions-0D1117?style=flat-square&logo=githubactions&logoColor=FF5A36" />
+    <img alt="Node.js" src="https://img.shields.io/badge/Node.js-0D1117?style=flat-square&logo=nodedotjs&logoColor=FF5A36" />
+    <img alt="Express" src="https://img.shields.io/badge/Express-0D1117?style=flat-square&logo=express&logoColor=FF5A36" />
+    <img alt="NestJS" src="https://img.shields.io/badge/NestJS-0D1117?style=flat-square&logo=nestjs&logoColor=FF5A36" />
+    <img alt="REST APIs" src="https://img.shields.io/badge/REST_APIs-0D1117?style=flat-square&logoColor=FF5A36" />
+    <img alt="GraphQL" src="https://img.shields.io/badge/GraphQL-0D1117?style=flat-square&logo=graphql&logoColor=FF5A36" />
+    <img alt="Prisma" src="https://img.shields.io/badge/Prisma-0D1117?style=flat-square&logo=prisma&logoColor=FF5A36" />
+    <img alt="Zod" src="https://img.shields.io/badge/Zod-0D1117?style=flat-square&logo=zod&logoColor=FF5A36" />
+    <img alt="Drizzle" src="https://img.shields.io/badge/Drizzle-0D1117?style=flat-square&logo=drizzle&logoColor=FF5A36" />
+  </td>
+</tr>
+<tr>
+  <td><b>infra</b></td>
+  <td>
+    <img alt="AWS" src="https://img.shields.io/badge/AWS-0D1117?style=flat-square&logoColor=FF5A36" />
+    <img alt="Serverless" src="https://img.shields.io/badge/Serverless-0D1117?style=flat-square&logo=serverless&logoColor=FF5A36" />
+    <img alt="Terraform" src="https://img.shields.io/badge/Terraform-0D1117?style=flat-square&logo=terraform&logoColor=FF5A36" />
+    <img alt="CDK" src="https://img.shields.io/badge/CDK-0D1117?style=flat-square&logoColor=FF5A36" />
     <img alt="Docker" src="https://img.shields.io/badge/Docker-0D1117?style=flat-square&logo=docker&logoColor=FF5A36" />
     <img alt="Hetzner" src="https://img.shields.io/badge/Hetzner-0D1117?style=flat-square&logo=hetzner&logoColor=FF5A36" />
-    <img alt="Cloudflare" src="https://img.shields.io/badge/Cloudflare-0D1117?style=flat-square&logo=cloudflare&logoColor=FF5A36" />
+  </td>
+</tr>
+<tr>
+  <td><b>databases</b></td>
+  <td>
+    <img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-0D1117?style=flat-square&logo=mongodb&logoColor=FF5A36" />
+    <img alt="MySQL" src="https://img.shields.io/badge/MySQL-0D1117?style=flat-square&logo=mysql&logoColor=FF5A36" />
+    <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-0D1117?style=flat-square&logo=postgresql&logoColor=FF5A36" />
+    <img alt="Redis" src="https://img.shields.io/badge/Redis-0D1117?style=flat-square&logo=redis&logoColor=FF5A36" />
+  </td>
+</tr>
+<tr>
+  <td><b>tests</b></td>
+  <td>
+    <img alt="Jest" src="https://img.shields.io/badge/Jest-0D1117?style=flat-square&logo=jest&logoColor=FF5A36" />
+    <img alt="Puppeteer" src="https://img.shields.io/badge/Puppeteer-0D1117?style=flat-square&logo=puppeteer&logoColor=FF5A36" />
+    <img alt="Playwright" src="https://img.shields.io/badge/Playwright-0D1117?style=flat-square&logoColor=FF5A36" />
+  </td>
+</tr>
+<tr>
+  <td><b>ci/cd</b></td>
+  <td>
+    <img alt="GitHub" src="https://img.shields.io/badge/GitHub-0D1117?style=flat-square&logo=github&logoColor=FF5A36" />
+    <img alt="Amplify" src="https://img.shields.io/badge/Amplify-0D1117?style=flat-square&logoColor=FF5A36" />
+    <img alt="Coolify" src="https://img.shields.io/badge/Coolify-0D1117?style=flat-square&logo=coolify&logoColor=FF5A36" />
+  </td>
+</tr>
+<tr>
+  <td><b>ai</b></td>
+  <td>
+    <img alt="Claude" src="https://img.shields.io/badge/Claude-0D1117?style=flat-square&logo=claude&logoColor=FF5A36" />
+    <img alt="Codex" src="https://img.shields.io/badge/Codex-0D1117?style=flat-square&logoColor=FF5A36" />
   </td>
 </tr>
 </table>
