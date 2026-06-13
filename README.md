@@ -39,7 +39,7 @@
 
 <!-- ============================== INTRO ============================== -->
 
-I ship products, build resilient teams, and lean on AI to move fast. Years of leading full-stack teams — decomposing monoliths, integrating with complex healthcare and insurance systems, mentoring engineers, and closing the gap between product and engineering — taught me what a well-built system looks like, and exactly what it costs when it isn't. Portfolio &amp; CV at **[profile.mitya.dev](https://profile.mitya.dev)**, project hub at **[mitya.dev](https://mitya.dev)**.
+I ship products, build resilient teams, and lean on AI to move fast. Years of leading full-stack teams, decomposing monoliths, integrating with complex healthcare and insurance systems, mentoring engineers, and closing the gap between product and engineering - taught me what a well-built system looks like, and exactly what it costs when it isn't. Portfolio &amp; CV at **[profile.mitya.dev](https://profile.mitya.dev)**, project hub at **[mitya.dev](https://mitya.dev)**.
 
 <!-- ===================== CONTRIBUTION ACTIVITY ===================== -->
 <!-- Both read the contribution calendar, so they DO include private contributions. Dark cards in both modes (intentional).
