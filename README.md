@@ -12,8 +12,10 @@
      Dropped by decision (2026-06-12): followers badge, view counter, trophy row (0-interest on a 0-follower account).
      Dropped by decision (2026-06-13): currently-building, stats card (public instance can't count private
      commits), snake + its workflow, connect (hero badges carry the links), torii.txt easter egg, achievements footer,
-     selected-work table, how-it-ships (paragraph + mermaid), more-experiments. Top-languages moved between
-     streak and activity. Toolbox re-sourced from the portfolio (mitekk/portfolio src/pages/theBuzz/toolbox.tsx).
+     selected-work table, how-it-ships (paragraph + mermaid), more-experiments. Toolbox re-sourced from the
+     portfolio (mitekk/portfolio src/pages/theBuzz/toolbox.tsx).
+     Dropped by decision (2026-10-24): the contribution activity graph — its public Vercel instance
+     answers 402 for everyone now, and the one working alternative renders on white.
      pool-stars source is private: live link only, no repo link. spark is private: omitted.
      Sections are commented; delete any block you don't want. -->
 
@@ -63,7 +65,9 @@ I ship products, build resilient teams, and lean on AI to move fast. Years of le
 ### toolbox
 
 <!-- Uniform ember-on-dark badges, sourced from the portfolio toolbox
-     (mitekk/portfolio · src/pages/theBuzz/toolbox.tsx, fetched 2026-06-13) — keep these in sync.
+     (mitekk/portfolio · src/pages/theBuzz/toolbox.tsx, fetched 2026-06-13; the 14 entries added
+     2026-10-24 came from the repos instead — campaign, worklog-tools, arbox-schedule, second-brain,
+     development-orchestration — so the portfolio is the one behind until it is synced back).
      AWS, CDK, Playwright, Amplify, Codex and REST APIs have no slug in shields.io's bundled
      simple-icons, so their logos are base64 data-URIs built from the portfolio's own
      src/assets/tech/*.svg (flattened to a single ember fill — logoColor is ignored for a
@@ -94,6 +98,9 @@ I ship products, build resilient teams, and lean on AI to move fast. Years of le
     <img alt="Prisma" src="https://img.shields.io/badge/Prisma-0D1117?style=flat-square&logo=prisma&logoColor=FF5A36" />
     <img alt="Zod" src="https://img.shields.io/badge/Zod-0D1117?style=flat-square&logo=zod&logoColor=FF5A36" />
     <img alt="Drizzle" src="https://img.shields.io/badge/Drizzle-0D1117?style=flat-square&logo=drizzle&logoColor=FF5A36" />
+    <img alt="Hono" src="https://img.shields.io/badge/Hono-0D1117?style=flat-square&logo=hono&logoColor=FF5A36" />
+    <img alt="Python" src="https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=FF5A36" />
+    <img alt="Resend" src="https://img.shields.io/badge/Resend-0D1117?style=flat-square&logo=resend&logoColor=FF5A36" />
   </td>
 </tr>
 <tr>
@@ -105,6 +112,10 @@ I ship products, build resilient teams, and lean on AI to move fast. Years of le
     <img alt="CDK" src="https://img.shields.io/badge/CDK-0D1117?style=flat-square&logo=data:image/svg%2bxml;base64,PHN2ZyBmaWxsPSIjRkY1QTM2IiB2aWV3Qm94PSItMjggMCAzMTIgMzEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnPjxwYXRoIGQ9Ik0xNi40OTEsMjE1LjUzIEwxOC42NjcsMjE4IEwxMjguNTgyLDI0OS4xNTcgTDEyOS4wOCwyMjkuODQ0IEw1Mi4xLDIxMC41MjYgTDQ4LjMzMywyMDkuMTY3IEwxNi40OTEsMjE1LjUzIj48L3BhdGg+PHBhdGggZD0iTTIzOS41MDUsMjE1LjUzIEwxMjcuMjUsMjUzIEwxMjYuOTE2LDIyOS44NDQgTDIwMy44OTUsMjEwLjUyNiBMMjA3LjI1LDIwNi43NSBMMjM5LjUwNSwyMTUuNTMiPjwvcGF0aD48cGF0aCBkPSJNMTI2LjkxNiw4My4xNjUgTDIwMy44OTUsMTAxLjEwNiBMMjM3Ljc1LDk5LjUgTDIzOS41MDUsOTYuMTA3IEwxMzIuMjUsNTcuNSBMMTI2LjkxNiw4My4xNjUiPjwvcGF0aD48cGF0aCBkPSJNNTIuMSwyMTAuNTI2IEwxNi40OTEsMjE1LjUzIEwxNS41LDIxMS44MzMgTDE1LjUsMTAwIEwxNi40OTEsOTYuMTA3IEw0OC42NjcsOTguNSBMNTIuMSwxMDEuMTEgTDUyLjEsMjEwLjUyNiI+PC9wYXRoPjxwYXRoIGQ9Ik0xMjkuMDgsODMuMTY1IEw1Mi4xLDEwMS4xMDYgTDE2LjQ5MSw5Ni4xMDcgTDE3LjgzMyw5NCBMMTI4LjU4Miw2Mi40OCBMMTI5LjA4LDgzLjE2NSI+PC9wYXRoPjxwYXRoIGQ9Ik0xMjcuODQ2LDAgTDAsNjQuNTMxIEwwLjA2MSwyNDcuMTQ0IEwxMjcuODQ2LDMxMS42NDEgTDEyOS43NSwzMDguNzUgTDEyOS43NSwzLjc1IEwxMjcuODQ2LDAgTDEyNy44NDYsMCBaIE05MC40NjIsMjM3LjczIEwxNi40OTEsMjE1LjUzIEwxNi40OTEsOTYuMTA3IEw5MC40NjIsNzMuOTE1IEw5MC40NjIsMjM3LjczIEw5MC40NjIsMjM3LjczIFoiPjwvcGF0aD48cGF0aCBkPSJNMjAzLjg5NSwyMTAuNTI2IEwyMzkuNTA1LDIxNS41MyBMMjQxLjUsMjEyIEwyNDEuNSw5OS41IEwyMzkuNTA1LDk2LjEwNyBMMjAzLjg5NSwxMDEuMTEgTDIwMy44OTUsMjEwLjUyNiI+PC9wYXRoPjxwYXRoIGQ9Ik0xMjcuODQ2LDMxMS42NDEgTDI1NS45MzksMjQ3LjE0OCBMMjU2LDY0LjUzNiBMMTI3Ljg0NiwwIEwxMjcuODQ2LDMxMS42NDEgTDEyNy44NDYsMzExLjY0MSBaIE0xNjUuNTMzLDczLjkxNSBMMjM5LjUwNSw5Ni4xMDcgTDIzOS41MDUsMjE1LjUzIEwxNjUuNTMzLDIzNy43MyBMMTY1LjUzMyw3My45MTUgTDE2NS41MzMsNzMuOTE1IFoiPjwvcGF0aD48L2c+PC9zdmc+" />
     <img alt="Docker" src="https://img.shields.io/badge/Docker-0D1117?style=flat-square&logo=docker&logoColor=FF5A36" />
     <img alt="Hetzner" src="https://img.shields.io/badge/Hetzner-0D1117?style=flat-square&logo=hetzner&logoColor=FF5A36" />
+    <img alt="Cloudflare" src="https://img.shields.io/badge/Cloudflare-0D1117?style=flat-square&logo=cloudflare&logoColor=FF5A36" />
+    <img alt="Traefik" src="https://img.shields.io/badge/Traefik-0D1117?style=flat-square&logo=traefikproxy&logoColor=FF5A36" />
+    <img alt="Tailscale" src="https://img.shields.io/badge/Tailscale-0D1117?style=flat-square&logo=tailscale&logoColor=FF5A36" />
+    <img alt="Ansible" src="https://img.shields.io/badge/Ansible-0D1117?style=flat-square&logo=ansible&logoColor=FF5A36" />
   </td>
 </tr>
 <tr>
@@ -114,6 +125,7 @@ I ship products, build resilient teams, and lean on AI to move fast. Years of le
     <img alt="MySQL" src="https://img.shields.io/badge/MySQL-0D1117?style=flat-square&logo=mysql&logoColor=FF5A36" />
     <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-0D1117?style=flat-square&logo=postgresql&logoColor=FF5A36" />
     <img alt="Redis" src="https://img.shields.io/badge/Redis-0D1117?style=flat-square&logo=redis&logoColor=FF5A36" />
+    <img alt="Neon" src="https://img.shields.io/badge/Neon-0D1117?style=flat-square&logo=neon&logoColor=FF5A36" />
   </td>
 </tr>
 <tr>
@@ -122,6 +134,7 @@ I ship products, build resilient teams, and lean on AI to move fast. Years of le
     <img alt="Jest" src="https://img.shields.io/badge/Jest-0D1117?style=flat-square&logo=jest&logoColor=FF5A36" />
     <img alt="Puppeteer" src="https://img.shields.io/badge/Puppeteer-0D1117?style=flat-square&logo=puppeteer&logoColor=FF5A36" />
     <img alt="Playwright" src="https://img.shields.io/badge/Playwright-0D1117?style=flat-square&logo=data:image/svg%2bxml;base64,PHN2ZyBmaWxsPSIjRkY1QTM2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTE1LjczNSwxMi45NzFhMi42NjcsMi42NjcsMCwwLDEsMS43MzIsMS41MzhsMS4wNjguM0EzLjAyMSwzLjAyMSwwLDAsMCwxNi41MDgsMTIuMmEyLjc4LDIuNzgsMCwwLDAtMi45NzUsMS4xNjksMi41LDIuNSwwLDAsMSwyLjItLjRabTguNSwxLjU0OGEyLjc3NiwyLjc3NiwwLDAsMC0yLjk3NCwxLjE2NywyLjQ5NCwyLjQ5NCwwLDAsMSwyLjItLjM5NUEyLjY3MSwyLjY3MSwwLDAsMSwyNS4yLDE2LjgyOWwxLjA3LjNhMy4wMjcsMy4wMjcsMCwwLDAtMi4wMjgtMi42MTVaTTIzLjE3NiwyMGwtOC44ODUtMi40ODRhNCw0LDAsMCwwLC40NjUsMS4xMTlsNy40ODEsMi4wOTFBMy45ODgsMy45ODgsMCwwLDAsMjMuMTc2LDIwWm0tNi4xNiw1LjM0NmMtNy4wMzUtMS44ODYtNi4xODUtMTAuODUtNS4wNDYtMTUuMWEyNS40NTgsMjUuNDU4LDAsMCwxLDEuMzUtMy45MjRjLS4yMzgtLjA0OS0uNDM2LjA3Ny0uNjMxLjQ3M0EyMy44NzcsMjMuODc3LDAsMCwwLDExLjIsMTEuMDI1Yy0xLjEzOCw0LjI0Ny0xLjk4OSwxMy4yMTEsNS4wNDYsMTUuMSwzLjMxNi44ODgsNS45LS40NjIsNy44MjUtMi41ODJhNy4yMyw3LjIzLDAsMCwxLTcuMDUyLDEuODFaIi8+PHBhdGggZD0iTTEzLjEyOSwyMC42MDhWMTguOEw4LjEsMjAuMjI0YTQsNCwwLDAsMSwyLjk5Mi0yLjksNC4zNDksNC4zNDksMCwwLDEsMi4wMzMtLjExNlY5Ljc4OGgyLjUxNmExNS4wNzIsMTUuMDcyLDAsMCwwLS43NjItMS45NTFjLS4zNjgtLjc1LS43NDYtLjI1My0xLjYuNDY0YTExLjkzOSwxMS45MzksMCwwLDEtNC40MjUsMi4yLDExLjg3NywxMS44NzcsMCwwLDEtNC45MjYuMzIxYy0xLjEtLjE4OS0xLjY3Mi0uNDMtMS42MTguNGExOC4zMTQsMTguMzE0LDAsMCwwLC42MjQsMy4zODdjLjg2OSwzLjI2NiwzLjc0Myw5LjU1OSw5LjE3Myw4LjFhNS40NTUsNS40NTUsMCwwLDAsMy4xMTQtMi4xSDEzLjEyOVptLTguMTEtNS45NTJMOC44NzgsMTMuNjRhMi4xNjYsMi4xNjYsMCwwLDEtMS41NTksMS44NjZBMi4yMTUsMi4yMTUsMCwwLDEsNS4wMTksMTQuNjU2WiIvPjxwYXRoIGQ9Ik0yNy42NTMsOS44NzRhMTUuMzY2LDE1LjM2NiwwLDAsMS02LjM4NC0uNCwxNS4zNTgsMTUuMzU4LDAsMCwxLTUuNzMxLTIuODQ1Yy0xLjEwOS0uOTI5LTEuNi0xLjU3NC0yLjA3Ni0uNmEyMy45LDIzLjksMCwwLDAtMS40OTIsNC4yMjRjLTEuMTM4LDQuMjQ3LTEuOTg4LDEzLjIxMSw1LjA0NiwxNS4xczEwLjc3OC02LjMsMTEuOTE2LTEwLjU1MmEyMy45NzcsMjMuOTc3LDAsMCwwLC44MTktNC40Yy4wNzItMS4wODUtLjY3My0uNzctMi4xLS41MlpNMTMuNTE5LDEzLjM4OGEyLjgsMi44LDAsMCwxLDIuOTg5LTEuMTksMy4wMjEsMy4wMjEsMCwwLDEsMi4wMjcsMi42MTRabTQuNTksNy43MzdhNS4xNjMsNS4xNjMsMCwwLDEtMy44MTctMy42MDZMMjMuMTc2LDIwYTQuODg3LDQuODg3LDAsMCwxLTUuMDY3LDEuMTIyWm0zLjE0MS01LjQyYTIuOCwyLjgsMCwwLDEsMi45ODctMS4xODdhMy4wMjcsMy4wMjcsMCwwLDEsMi4wMjgsMi42MTVMMjEuMjUsMTUuNzA1WiIvPjxwYXRoIGQ9Ik0xMS4zNzMsMTkuMyw4LjEsMjAuMjI0QTMuOTcsMy45NywwLDAsMSwxMC44NjcsMTcuNEw5LjAxNSwxMC40NTFsLS4xNi4wNDlhMTEuODc2LDExLjg3NiwwLDAsMS00LjkyNi4zMjFjLTEuMS0uMTg5LTEuNjcyLS40My0xLjYxOC40YTE4LjMxNSwxOC4zMTUsMCwwLDAsLjYyNCwzLjM4N2MuODY5LDMuMjY2LDMuNzQzLDkuNTU5LDkuMTczLDguMWwuMTYtLjA1Wk01LjAxOSwxNC42NTYsOC44NzgsMTMuNjRhMi4xNjYsMi4xNjYsMCwwLDEtMS41NTksMS44NjZBMi4yMTUsMi4yMTUsMCwwLDEsNS4wMTksMTQuNjU2WiIvPjxwYXRoIGQ9Ik0xOC4yNTgsMjEuMTYybC0uMTUtLjAzNmE1LjE2Myw1LjE2MywwLDAsMS0zLjgxNy0zLjYwNkwxOC44NzIsMTguOCwyMS4zLDkuNDc5bC0uMDI5LS4wMDhhMTUuMzU5LDE1LjM1OSwwLDAsMS01LjczMS0yLjg0NWMtMS4xMDktLjkyOS0xLjYtMS41NzQtMi4wNzYtLjZhMjMuOTM3LDIzLjkzNywwLDAsMC0xLjQ5Miw0LjIyNGMtMS4xMzgsNC4yNDctMS45ODgsMTMuMjExLDUuMDQ2LDE1LjFsLjE0NC4wMzJabS00LjczOS03Ljc3M2EyLjgsMi44LDAsMCwxLDIuOTg5LTEuMTksMy4wMjEsMy4wMjEsMCwwLDEsMi4wMjcsMi42MTRaTS4wOTQtLjU0MiIvPjwvc3ZnPg==" />
+    <img alt="Vitest" src="https://img.shields.io/badge/Vitest-0D1117?style=flat-square&logo=vitest&logoColor=FF5A36" />
   </td>
 </tr>
 <tr>
@@ -130,6 +143,9 @@ I ship products, build resilient teams, and lean on AI to move fast. Years of le
     <img alt="GitHub" src="https://img.shields.io/badge/GitHub-0D1117?style=flat-square&logo=github&logoColor=FF5A36" />
     <img alt="Amplify" src="https://img.shields.io/badge/Amplify-0D1117?style=flat-square&logo=data:image/svg%2bxml;base64,PHN2ZyBmaWxsPSIjRkY1QTM2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyIDJMMiAxOS41aDQuNUwxMiA5bDUuNSAxMC41SDIyTDEyIDJ6Ii8+PHBhdGggZD0iTTcuNSAxOS41aDlMMTIgMTJsLTQuNSA3LjV6Ii8+PC9zdmc+" />
     <img alt="Coolify" src="https://img.shields.io/badge/Coolify-0D1117?style=flat-square&logo=coolify&logoColor=FF5A36" />
+    <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub_Actions-0D1117?style=flat-square&logo=githubactions&logoColor=FF5A36" />
+    <img alt="pnpm" src="https://img.shields.io/badge/pnpm-0D1117?style=flat-square&logo=pnpm&logoColor=FF5A36" />
+    <img alt="Turborepo" src="https://img.shields.io/badge/Turborepo-0D1117?style=flat-square&logo=turborepo&logoColor=FF5A36" />
   </td>
 </tr>
 <tr>
@@ -137,6 +153,8 @@ I ship products, build resilient teams, and lean on AI to move fast. Years of le
   <td>
     <img alt="Claude" src="https://img.shields.io/badge/Claude-0D1117?style=flat-square&logo=claude&logoColor=FF5A36" />
     <img alt="Codex" src="https://img.shields.io/badge/Codex-0D1117?style=flat-square&logo=data:image/svg%2bxml;base64,PHN2ZyBmaWxsPSIjRkY1QTM2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTIyLjI4MiA5LjgyMWE1Ljk4NSA1Ljk4NSAwIDAgMC0uNTE2LTQuOTEgNi4wNDYgNi4wNDYgMCAwIDAtNi41MS0yLjlBNi4wNjUgNi4wNjUgMCAwIDAgNC45ODEgNC4xOGE1Ljk4NSA1Ljk4NSAwIDAgMC0zLjk5OCAyLjkgNi4wNDYgNi4wNDYgMCAwIDAgLjc0MyA3LjA5NyA1Ljk4IDUuOTggMCAwIDAgLjUxIDQuOTExIDYuMDUxIDYuMDUxIDAgMCAwIDYuNTE1IDIuOUE1Ljk4NSA1Ljk4NSAwIDAgMCAxMy4yNiAyNGE2LjA1NiA2LjA1NiAwIDAgMCA1Ljc3Mi00LjIwNiA1Ljk5IDUuOTkgMCAwIDAgMy45OTctMi45IDYuMDU2IDYuMDU2IDAgMCAwLS43NDctNy4wNzN6TTEzLjI2IDIyLjQzYTQuNDc2IDQuNDc2IDAgMCAxLTIuODc2LTEuMDRsLjE0MS0uMDgxIDQuNzc5LTIuNzU4YS43OTUuNzk1IDAgMCAwIC4zOTItLjY4MXYtNi43MzdsMi4wMiAxLjE2OGEuMDcxLjA3MSAwIDAgMSAuMDM4LjA1MnY1LjU4M2E0LjUwNCA0LjUwNCAwIDAgMS00LjQ5NCA0LjQ5NHpNMy42IDE4LjMwNGE0LjQ3IDQuNDcgMCAwIDEtLjUzNS0zLjAxNGwuMTQyLjA4NSA0Ljc4MyAyLjc1OWEuNzcxLjc3MSAwIDAgMCAuNzggMGw1Ljg0My0zLjM2OXYyLjMzMmEuMDguMDggMCAwIDEtLjAzMi4wNjVMOS43NCAxOS45NWE0LjUgNC41IDAgMCAxLTYuMTQtMS42NDZ6TTIuMzQgNy44OTZhNC40ODUgNC40ODUgMCAwIDEgMi4zNjYtMS45NzNWMTEuNmEuNzY2Ljc2NiAwIDAgMCAuMzg4LjY3Nmw1LjgxNSAzLjM1NS0yLjAyIDEuMTY4YS4wNzYuMDc2IDAgMCAxLS4wNzEgMGwtNC44My0yLjc4NkE0LjUwNCA0LjUwNCAwIDAgMSAyLjM0IDcuODk0em0xNi41OTcgMy44NTVsLTUuODQzLTMuMzcyTDE1LjExOSA3LjJhLjA3Ni4wNzYgMCAwIDEgLjA3MSAwbDQuODMgMi43OTFhNC40OTQgNC40OTQgMCAwIDEtLjY3NiA4LjEwNXYtNS42NzhhLjc5Ljc5IDAgMCAwLS40MDctLjY2N3ptMi4wMS0zLjAyM2wtLjE0MS0uMDg1LTQuNzc0LTIuNzgyYS43NzYuNzc2IDAgMCAwLS43ODUgMEw5LjQwOSA5LjIzVjYuODk3YS4wNjYuMDY2IDAgMCAxIC4wMjgtLjA2MWw0LjgzLTIuNzg3YTQuNSA0LjUgMCAwIDEgNi42OCA0LjY2em0tMTIuNjQgNC4xMzVsLTIuMDItMS4xNjRhLjA4LjA4IDAgMCAxLS4wMzgtLjA1N1Y2LjA3NWE0LjUgNC41IDAgMCAxIDcuMzc1LTMuNDUzbC0uMTQyLjA4TDguNzA0IDUuNDZhLjc5NS43OTUgMCAwIDAtLjM5My42ODF6bTEuMDk3LTIuMzY1bDIuNjAyLTEuNSAyLjYwNyAxLjV2Mi45OTlsLTIuNTk3IDEuNS0yLjYwNy0xLjV6Ii8+PC9zdmc+" />
+    <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-0D1117?style=flat-square&logo=claude&logoColor=FF5A36" />
+    <img alt="Anthropic SDK" src="https://img.shields.io/badge/Anthropic_SDK-0D1117?style=flat-square&logo=anthropic&logoColor=FF5A36" />
   </td>
 </tr>
 </table>
