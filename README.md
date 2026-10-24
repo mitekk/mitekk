@@ -44,7 +44,7 @@ I ship products, build resilient teams, and lean on AI to move fast. Years of le
 
 <!-- ===================== CONTRIBUTION ACTIVITY ===================== -->
 <!-- Both read the contribution calendar, so they DO include private contributions. Dark cards in both modes (intentional).
-     Activity graph pinned to a 45-day range (days=45). Public demolab/vercel instances may rate-limit. -->
+     Public demolab/vercel instances may rate-limit. -->
 <div align="center">
 
 <img width="60%" alt="mitekk's contribution streak" src="https://streak-stats.demolab.com?user=mitekk&hide_border=true&background=0D1117&border=30363D&stroke=30363D&ring=FF5A36&fire=FF5A36&currStreakNum=A8B3CF&currStreakLabel=FF5A36&sideNums=A8B3CF&sideLabels=A8B3CF&dates=8B949E" />
@@ -52,11 +52,7 @@ I ship products, build resilient teams, and lean on AI to move fast. Years of le
 <br/>
 
 <!-- top languages: fixed dark panel (theme baked to #0D1117 + ember) — renders as a dark card in BOTH modes, intentional. Public instances may rate-limit. -->
-<img width="49%" alt="mitekk's top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mitekk&layout=compact&hide_border=true&langs_count=8&title_color=FF5A36&text_color=A8B3CF&bg_color=0D1117" />
-
-<br/>
-
-<img width="98%" alt="mitekk's contribution activity (last 45 days)" src="https://github-readme-activity-graph.vercel.app/graph?username=mitekk&days=45&bg_color=0D1117&color=FF5A36&line=FF5A36&point=FFFFFF&area=true&area_color=FF5A36&hide_border=true&custom_title=contribution%20activity%20%C2%B7%20last%2045%20days" />
+<img width="60%" alt="mitekk's top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mitekk&layout=compact&hide_border=true&langs_count=8&title_color=FF5A36&text_color=A8B3CF&bg_color=0D1117" />
 
 </div>
 
